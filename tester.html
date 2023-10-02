@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total-box {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.list {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.list h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Property</a></li>
+            <li><a href="#">Tenants</a></li>
+            <li><a href="#">User</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <nav class="navbar">
+            <h1>Admin Dashboard</h1>
+        </nav>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <div class="total-box">
+                <h2>Total Tenants</h2>
+                <p>50</p>
+            </div>
+            <div class="total-box">
+                <h2>Total Properties</h2>
+                <p>100</p>
+            </div>
+            <div class="total-box">
+                <h2>Total Owners</h2>
+                <p>20</p>
+            </div>
+        </div>
+
+        <!-- Property List -->
+        <div class="list">
+            <h2>Property List</h2>
+            <table>
+                <!-- Table headers here -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <!-- Table data here -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Property 1</td>
+                        <td>Location 1</td>
+                        <!-- Add more rows as needed -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tenants List -->
+        <div class="list">
+            <h2>Tenants List</h2>
+            <table>
+                <!-- Table headers here -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <!-- Table data here -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tenant 1</td>
+                        <td>tenant1@example.com</td>
+                        <!-- Add more rows as needed -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- User List -->
+        <div class="list">
+            <h2>User List</h2>
+            <table>
+                <!-- Table headers here -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <!-- Table data here -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>User 1</td>
+                        <td>Admin</td>
+                        <!-- Add more rows as needed -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
