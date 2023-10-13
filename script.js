@@ -20,7 +20,10 @@ const sidebar = document.getElementById('sidebar');
 
 menuBar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
-})
+	
+});
+
+
 
 
 
@@ -74,3 +77,6 @@ switchMode.addEventListener('change', function () {
 		document.body.classList.remove('dark');
 	}
 })
+
+
+
