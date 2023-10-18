@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS for input fields */
+        .half-width-input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 768px) {
+            .input-group {
+                width: 48%;
+            }
+        }
+
+        /* CSS for responsive image */
+        .responsive-image {
+            width: 100%; /* Ensure the image takes the full width of its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="input-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" class="half-width-input">
+        </div>
+
+        <div class="input-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" class="half-width-input">
+        </div>
+    </div>
+
+    <!-- Responsive Image -->
+    <img src="example-image.jpg" alt="Responsive Image" class="responsive-image">
+</body>
+</html>
