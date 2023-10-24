@@ -126,4 +126,36 @@ cancelBtn.addEventListener("click", function() {
 });
 
 
+// Get the edit button and edit form elements
+const editBtn = document.querySelector('.editbtn');
+const editForm = document.getElementById('edit-form');
+const dataTable = document.getElementById('data-table');
+
+// Add click event listener to the edit button
+editBtn.addEventListener('click', function() {
+  // Hide the table
+  dataTable.style.display = 'none';
+  // Show the edit form
+  editForm.style.display = 'block';
+});
+
+// Add click event listener to the save button in the edit form
+const saveBtn = document.getElementById('save-btn');
+const canclBtn = document.getElementById('cancl-btn');
+saveBtn.addEventListener('click', function() {
+  // Perform save logic here
+  
+  // After saving, show the table again and hide the edit form
+  dataTable.style.display = 'block';
+  editForm.style.display = 'none';
+});
+canclBtn.addEventListener('click', function() {
+	// Perform save logic here
+	
+	// After saving, show the table again and hide the edit form
+	dataTable.style.display = 'block';
+	editForm.style.display = 'none';
+  });
+
+
 

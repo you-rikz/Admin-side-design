@@ -62,20 +62,7 @@
 				</a>
 			</li>
 		</ul>
-		<ul class="side-menu">
-			<li>
-				<a href="#">
-					<i class='bx bxs-cog icon' ></i>
-					<span class="text">Settings</span>
-				</a>
-			</li>
-			<li>
-				<a href="#" class="logout">
-					<i class='bx bxs-log-out-circle icon' ></i>
-					<span class="text">Logout</span>
-				</a>
-			</li>
-		</ul>
+		
 	</section>
 	<!-- SIDEBAR -->
 
@@ -88,7 +75,7 @@
 			<i class='bx bx-menu' ></i>
 			<!-- <a href="#" class="nav-link">Categories</a> -->
 			<form action="#">
-				<div class="form-input">
+				<div style="display: none;" class="form-input">
 					<input type="search" placeholder="Search...">
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
@@ -108,9 +95,7 @@
                     <a href="#" class="sub-menu-link">
                         <p>Edit Profile</p>
                     </a>
-                    <a href="#" class="sub-menu-link">
-                        <p>Settings & Privacy</p>
-                    </a>
+                   
                     <a href="#" class="sub-menu-link"> 
                         <p>Logout</p>      
                     </a>
@@ -129,97 +114,18 @@
 			<div class="head-title">
 				<div class="left">
 					<h1>Owners</h1>
-					<!-- <ul class="breadcrumb">
-						<li>
-							<a href="#">Dashboard</a>
-						</li>
-						<li><i class='bx bx-chevron-right' ></i></li>
-						<li>
-							<a class="active" href="#">Home</a>
-						</li>
-					</ul> -->
+					
 				</div>
-					<a href="#" class="btn-download">
-						<!-- <i class='bx bxs-plus' ></i> -->
+					<a href="#" class="btn-add">
+						
 						<span class="text">Add</span>
 					</a>
 			</div>
 
-			<!-- <ul class="box-info">
-				<a href="#">
-					<li style="border:1px solid red">
-						<i style="border:1px solid blue"  class='bx bxs-home' ></i>
-						<span class="text">
-							<h3>---</h3>
-							<p>Properties</p>
-						</span>
-
-					</li>
-				</a>
-				
-				<a href="#">
-					<li >
-						<i   class='bx bxs-home' ></i>
-						<span class="text">
-							<h3>---</h3>
-							<p>Properties</p>
-						</span>
-
-					</li>
-				</a>
-				
-			</ul> -->
-			<!-- <ul class="box-info">
-				<a href="#">
-					<li >
-						<i   class='bx bxs-home' ></i>
-						<span class="text">
-							<h3>---</h3>
-							<p>Properties</p>
-						</span>
-
-					</li>
-				</a>
-				
-				<a href="#">
-					<li >
-						<i   class='bx bxs-home' ></i>
-						<span class="text">
-							<h3>---</h3>
-							<p>Properties</p>
-						</span>
-
-					</li>
-				</a>
 			
-			</ul> -->
-			<!-- <ul class="box-info">
-				<a href="#">
-					<li >
-						<i   class='bx bxs-home' ></i>
-						<span class="text">
-							<h3>---</h3>
-							<p>Properties</p>
-						</span>
-
-					</li>
-				</a>
-				
-				<a href="#">
-					<li >
-						<i   class='bx bxs-home' ></i>
-						<span class="text">
-							<h3>---</h3>
-							<p>Properties</p>
-						</span>
-
-					</li>
-				</a>
-			
-			</ul> -->
 
 
-			<div class="table-data">
+			<div id="data-table" class="table-data">
 				<div class="order">
 					<div class="head">
 						<h3>Owner List</h3>
@@ -262,7 +168,7 @@
 								<td><p>099999999</p></td>
 								<td><p>dasdas@gmail.com</p></td>
 								<td><span class="status completed">Completed</span></td>
-								<td ><a href=""><i class='editbtn bx bx-edit' ></i></a><i class='trash bx bx-trash' ></i></td>
+								<td><i class='editbtn bx bx-edit' ></i><i class='trash bx bx-trash' ></i></td>
 							</tr>
 							<tr>
 								<td>
@@ -277,7 +183,7 @@
 								<td><p>099999999</p></td>
 								<td><p>dasdas@gmail.com</p></td>
 								<td><span class="status completed">Completed</span></td>
-								<td><a href=""><i class='editbtn bx bx-edit' ></i></a><i class='trash bx bx-trash' ></i></td>
+								<td><i class='editbtn bx bx-edit' ></i><i class='trash bx bx-trash' ></i></td>
 							</tr>
 						</tbody>
 					</table>
@@ -285,125 +191,70 @@
 				
 			</div>
 
-			<!-- <div class="edit-data">
+
+
+			<!-- EDIT-DATA -->
+
+			
+
+			<div id="edit-form" class="edit-data" >
 				<div class="order">
 					<div class="head">
-						<h3>Owner List</h3>
-						<div class="container">
-							<input checked="" class="checkbox" type="checkbox"> 
-							<div class="mainbox">
-								<div class="iconContainer">
-									<svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
-								</div>
-							 <input class="search_input" placeholder="search" type="text">
-							</div>
-						</div>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Assigned To</th>
-								<th>Contact Number</th>
-								<th>Email</th>
-								
-								<th>Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-								01
-								</td>
-								<td><input type="text"></td>
-								<td><input type="text"></td>
-								<td><input type="text"></td>
-								<td><input type="text"></td>
-								<td><input type="text"></td>
-								
-								<td><a href=""><i class='editbtn bx bx-check' ></i></a><i class='trash bx bx-x' ></i></td>
-							</tr>
-						
-						</tbody>
-					</table>
-				</div>
-				
-			</div> -->
-
-			<div class="edit-data">
-				<div class="order">
-					<div class="head">
-						<h3>Edit User</h3>
-						
+						<h3>Edit User</h3>			
 					</div>
 
-					<div class="row edit">
-						<div class="edit-group1">
-							<label for="first-name">First Name</label>
-							<input type="text" id="first-name" name="first-name" class="first-line-edit">
+					<div class="row row-container">
+						<div class="edit-column">
+							<label for="first-name">First Name </label>
+							<input id="first-name" name="first-name" type="text" class="edit-txtbox"/>
+							<label for="last-name">Last Name </label>
+							<input id="last-name" name="last-name" type="text" class="edit-txtbox"/>
+							<label for="assigned-to">Assigned To</label>
+							<input id="assigned-to" name="assigned-to" type="text" class="edit-txtbox"/>
+							<label for="contact-num">Contact Number</label>
+							<input id="contact-num" name="contact-num" type="text" class="edit-txtbox"/>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" class="edit-txtbox"/>
 						</div>
-						<div class="edit-group1">
-							<label for="last-name">Last Name</label>
-							<input type="text" id="last-name" name="last-name" class="first-line-edit">
-						</div>
-						<div class="edit-group1">
-							<label for="last-name">Assigned To</label>
-							<input type="text" id="assigned-to" name="assigned-to" class="first-line-edit">
-						</div>
-					</div>
-					<div class="row edit">
-						<div class="edit-group2">
-							<label for="first-name">Contact Number</label>
-							<input type="text" id="contact-num" name="contact-num" class="second-line-edit">
-						</div>
-						<div class="edit-group2">
-							<label for="last-name">Email</label>
-							<input type="email" id="email" name="last-name" class="second-line-edit">
-						</div>
-						
-					</div>
-					
-					
-
-					<!-- Add/Change Image -->
-					<div class=" profile-img">
 						<div class="img-profile">
 							<div class="wrapper">
-							<div class="image">
-								<img class="change-add" src="" alt="" >
-							</div>
-							<div class="content">
-								<div class="icon">
-									<i class="fas fa-cloud-upload-alt"></i>
+								<div class="image">
+									<img class="change-add" src="" alt="">
 								</div>
-								<div class="text">
-									Change picture
+								<div class="content">
+									<div class="icon">
+										<i class="fas fa-cloud-upload-alt"></i>
+									</div>
+									<div class="text">
+										Change picture
+									</div>
 								</div>
-							</div>
-							<div id="cancel-btn">
-								<i class="fas fa-times"></i>
-							</div>
-							<div class="file-name">
-								File name here
-							</div>
+								<div id="cancel-btn">
+									<i class="fas fa-times"></i>
+								</div>
+								<div class="file-name">
+									File name here
+								</div>
 							</div>
 							<button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
 							<input id="default-btn" type="file" hidden>
 						</div>
+						
 					</div>
-					 <div class="row saveNcancel">
+					<div class="row saveNcancel">
 						<div class="saveNcancel">
-					<span class="status save">Save</span>
-					<span class="status cancel">Cancel</span>
+							<span id="save-btn"  class="status save action-status">Save</span>
+							<span id="cancl-btn" class="status cancel action-status">Cancel</span>
 						</div>
 					</div>
+
+					
 					
 				</div>
 				
 			</div>
+
+			<!-- EDIT-DATA -->
 
 			
 		</main>
@@ -412,6 +263,6 @@
 	<!-- CONTENT -->
 	
 
-	<script src="script.js"></script>
+	<script src="admin_script.js"></script>
 </body>
 </html>
